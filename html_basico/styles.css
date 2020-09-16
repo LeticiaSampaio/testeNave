@@ -164,11 +164,6 @@ input{
     height: 20px;
 }
 
-#naverForm span{
-    font-weight: 600;
-    font-size: 24px;
-}
-
 #dataNaver{
     display: flex;
     flex-wrap: wrap;
@@ -193,6 +188,19 @@ input{
 
 /* --------------- Modals --------------- */
 
+.modal{
+    display: none;
+    position: fixed;
+    z-index: 1;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    overflow: auto;
+    background-color: rgb(0,0,0);
+    background-color: rgba(0,0,0,0.4);
+}
+
 #close{
     position: absolute;
     background: url(../imagens/close.png) no-repeat;
@@ -204,21 +212,21 @@ input{
 }
 
 #adicionarNaverModal{
+    background: #ffffff;
     position: absolute;
     width: 592px;
     height: 160px;
     left: calc(50% - 592px/2);
     top: calc(50% - 160px/2);
-    border: 1px solid #212121;
 }
 
 #excluirNaverModal{
+    background: #ffffff;
     position: absolute;
     width: 592px;
     height: 233px;  
     left: calc(50% - 592px/2);
     top: calc(50% - 233px/2);
-    border: 1px solid #212121;
 }
 
 .modalSimple .title2{
@@ -245,13 +253,13 @@ input{
     top: 92px;
 }
 
-.modal.cancel{
+#cancelBtn{
     position: absolute;
     left: 184px;
     top: 161px;
 }
 
-.modal.confirm{
+#excludeBtn{
     position: absolute;
     left: 384px;
     top: 161px;
@@ -278,6 +286,7 @@ button.cancel{
     background: #ffffff;
     width: 176px;
     height: 40px;
+    border: 1px solid #212121;
 }
 
 button.confirm{

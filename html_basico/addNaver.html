@@ -13,8 +13,8 @@
     </div>
     <div id="naverForm">
         <div id="backTitle">
-            <button id="goBack"></button>
-            <span>Adicionar Naver</span>
+            <a href="home.html"><button id="goBack"></button></a>
+            <span class="title2">Adicionar Naver</span>
         </div>
         <form id="dataNaver">
             <div>
@@ -36,10 +36,18 @@
                 <label for="url">URL da foto do Naver</label><br/><input type="text" placeholder="URL da foto do Naver" id="url">
             </div>
             <div id="saveButton">
-                <button type="button" class="confirm">Salvar</button>
+                <button type="button" class="confirm" id="save">Salvar</button>
             </div>
-            
+            <div id="modalContainer" class="modal">
+                <div id="adicionarNaverModal" class="modalSimple">
+                    <button id="close"></button>
+                    <span class="title2">Naver criado</span>
+                    <br>
+                    <span class="text">Naver criado com sucesso!</span>
+                </div>
+            </div>
         </form>
     </div>
+    <script src="modalConfirm.js"></script>
 </body>
 </html>
