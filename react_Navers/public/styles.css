@@ -1,0 +1,299 @@
+body{
+    color: #212121;
+    font-family: Montserrat;
+    font-style: normal;
+    margin: 0;
+    padding: 0;
+}
+
+/* --------------- Header --------------- */
+
+#header{
+    position: absolute;
+    width: 100%;
+    height: 20%;
+    left: 0px;
+    top: 0px;
+}
+
+#logo{
+    position: absolute;
+    left: 2.5%;
+    top: 15%;
+}
+
+#logOut{
+    color: #000000;
+    text-decoration: none;
+    position: absolute;
+    display: flex;
+    width: 28px;
+    height: 24px;
+    right: 4%;
+    top: 30px;
+    font-weight: 600;
+    font-size: 14px;
+}
+
+/* --------------- Home page --------------- */
+
+#top_cards{
+    width: 100%;
+    height: 15%;
+}
+
+#top_cards p{
+    position: absolute;
+    width: 141px;
+    height: 48px;
+    left: 2.5%;
+    top: 20%;
+    font-weight: 600;
+    font-size: 40px;
+    line-height: 48px;
+    margin: 0;
+}
+
+#top_cards button{
+    position: absolute;
+    right: 2.5%;
+    top: 20%;
+}
+
+#cards_container{
+    position: absolute;
+    display: flex;
+    flex-wrap: wrap;
+    margin: 40px 5px;
+    top: 25%;
+    width: 100%;
+}
+
+.card{
+    margin: 20px 15px;
+    width: 280px;
+    height: 410px;
+}
+
+.name{
+    font-weight: 600;
+    font-size: 16px;
+    line-height: 18px;
+}
+
+.job{
+    font-weight: normal;
+    font-size: 16px;
+    line-height: 24px;
+}
+
+.delete{
+    width: 24px;
+    height: 24px;
+}
+
+.edit{
+    width: 24px;
+    height: 24px;
+    left: 6%;
+}
+
+/* --------------- Login page --------------- */
+
+#login{
+    position: absolute;
+    padding: 20px;
+    width: 448px;
+    height: 408px;
+    left: calc(50% - 448px/2);
+    top: calc(50% - 408px/2);
+    border: 1px solid #212121;
+    box-sizing: border-box;
+}
+
+#login img{
+    position: relative;
+    left: calc(50% - 250px/2);
+    top: 30px;
+    width: 250px;
+}
+
+#login form{
+    position: relative;
+    top: 15%;
+}
+
+label{
+    font-weight: 600;
+    font-size: 14px;
+}
+
+input{
+    width: 384px;
+    height: 40px;
+    margin-bottom: 30px;
+    border: 1px solid #424242;
+}
+
+#login form button{
+    color: #ffffff;
+    background: #212121;
+    width: 390px;
+    height: 40px;
+}
+
+/* --------------- Form page --------------- */
+
+#naverForm{
+    position: absolute;
+    width: 632px;
+    height: 408px;
+    left: calc(50% - 632px/2);
+    top: calc(50% - 388px/2);
+}
+
+#backTitle{
+    margin: 20px 0px;
+}
+
+#goBack{
+    position: relative;
+    background: url(/imagens/back.png) no-repeat;
+    border: none;
+    margin: 0 15px;
+    width: 20px;
+    height: 20px;
+}
+
+#dataNaver{
+    display: flex;
+    flex-wrap: wrap;
+}
+
+#dataNaver input{
+    width: 280px;
+    height: 40px;
+    margin: 15px;
+}
+
+#dataNaver label{
+    margin: 15px;
+}
+
+#saveButton{
+    width: 100%;
+    display: flex;
+    flex-flow: row-reverse;
+    margin: 15px;
+}
+
+/* --------------- Modals --------------- */
+
+.modal{
+    display: none;
+    position: fixed;
+    z-index: 1;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    overflow: auto;
+    background-color: rgb(0,0,0);
+    background-color: rgba(0,0,0,0.4);
+}
+
+#close{
+    position: absolute;
+    background: url(/imagens/close.png) no-repeat;
+    width: 20px;
+    height: 20px;
+    left: 94%;
+    top: 13%;
+    border: none;
+}
+
+#adicionarNaverModal{
+    background: #ffffff;
+    position: absolute;
+    width: 592px;
+    height: 160px;
+    left: calc(50% - 592px/2);
+    top: calc(50% - 160px/2);
+}
+
+#excluirNaverModal{
+    background: #ffffff;
+    position: absolute;
+    width: 592px;
+    height: 233px;  
+    left: calc(50% - 592px/2);
+    top: calc(50% - 233px/2);
+}
+
+.modalSimple .title2{
+    position: absolute;
+    left: 5%;
+    top: 20%;
+}
+
+.modalSimple .text{
+    position: absolute;
+    left: 5%;
+    top: 65%;
+}
+
+.modalConfirm .title2{
+    position: absolute;
+    left: 32px;
+    top: 32px;
+}
+
+.modalConfirm .text{
+    position: absolute;
+    left: 32px;
+    top: 92px;
+}
+
+#cancelBtn{
+    position: absolute;
+    left: 184px;
+    top: 161px;
+}
+
+#excludeBtn{
+    position: absolute;
+    left: 384px;
+    top: 161px;
+}
+
+/* --------------- For All --------------- */
+
+.title2{
+    font-weight: 600;
+    font-size: 24px;
+}
+
+.text{
+    font-weight: normal;
+    font-size: 16px;
+}
+
+.hidden{
+    display: none;
+}
+
+button.cancel{
+    color: #212121;
+    background: #ffffff;
+    width: 176px;
+    height: 40px;
+    border: 1px solid #212121;
+}
+
+button.confirm{
+    color: #ffffff;
+    background: #212121;
+    width: 176px;
+    height: 40px;
+    border: none;
+}
