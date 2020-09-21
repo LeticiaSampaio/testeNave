@@ -1,6 +1,7 @@
 const url = 'https://navedex-api.herokuapp.com/v1/';
 
 var login = {email: "testing-user@nave.rs", password: "nave1234"};
+var login2 = {email: "leticia@nave.rs", password: "nave1234"};
 var naver = {
 	job_role: "Desenvolvedor",
 	admission_date: "19/08/2018",

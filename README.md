@@ -14,7 +14,7 @@ Desafio de Front-End proposto em: [github.com/naveteam/front-end-challenge](http
 
 # Tecnologias utilizadas
 
-Para o desenvolvimento do desfaio foi utlilizado [React](https://pt-br.reactjs.org/) e [fetch api](https://developer.mozilla.org/en-US/docs/Web/API/Fetch_API)
+Para o desenvolvimento do desfaio foi utlilizado [React](https://pt-br.reactjs.org/), [fetch api](https://developer.mozilla.org/en-US/docs/Web/API/Fetch_API) e para a criação do projeto utizei a cli [Create React App](https://github.com/facebook/create-react-app).
 
 # Dificudades
 
